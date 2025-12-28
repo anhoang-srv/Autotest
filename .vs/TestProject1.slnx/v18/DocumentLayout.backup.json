@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|c:\\users\\admin\\source\\repos\\testproject1\\helper\\narratorverifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|solutionrelative:helper\\narratorverifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|c:\\users\\admin\\source\\repos\\testproject1\\helper\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|solutionrelative:helper\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|c:\\users\\admin\\source\\repos\\testproject1\\helper\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|solutionrelative:helper\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|c:\\users\\admin\\source\\repos\\testproject1\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|solutionrelative:appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|c:\\users\\admin\\source\\repos\\testproject1\\feature\\narratorgherkin.feature||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|solutionrelative:feature\\narratorgherkin.feature||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|c:\\users\\admin\\source\\repos\\testproject1\\helper\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C73127-F2BF-5424-83B5-E8A85B1DFAA1}|TestProject1.csproj|solutionrelative:helper\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NarratorVerifier.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\NarratorVerifier.cs",
+              "RelativeDocumentMoniker": "Helper\\NarratorVerifier.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\NarratorVerifier.cs",
+              "RelativeToolTip": "Helper\\NarratorVerifier.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAA3wA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T09:41:20.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T09:36:34.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hooks.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\Hooks.cs",
+              "RelativeDocumentMoniker": "Helper\\Hooks.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\Hooks.cs",
+              "RelativeToolTip": "Helper\\Hooks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T08:56:44.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "General.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\General.cs",
+              "RelativeDocumentMoniker": "Helper\\General.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\General.cs",
+              "RelativeToolTip": "Helper\\General.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T08:56:38.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sessions.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\Sessions.cs",
+              "RelativeDocumentMoniker": "Helper\\Sessions.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Helper\\Sessions.cs",
+              "RelativeToolTip": "Helper\\Sessions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T08:56:29.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NarratorGherkin.feature",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Feature\\NarratorGherkin.feature",
+              "RelativeDocumentMoniker": "Feature\\NarratorGherkin.feature",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TestProject1\\Feature\\NarratorGherkin.feature",
+              "RelativeToolTip": "Feature\\NarratorGherkin.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVDhPddBPiNR1GMfx1/c36\u002Bx/29Ylf7NUrriiKIhhHYKgdMMgukXNEBSCFEInb3WKghYCIRBBOnjpoLOHBMsOQaBQQhc71EFrUwmUmdm1Nqddnd119tth9zc7s9hz\u002B36ez\u002Bf9PN8neFSdSwcFe7AdDwW3NF33VnWhwxdjDJ0CptIjOI496FrrLOFXTCpVz7dH1gHltAcn8D50J3mLK0uSkOhO8h40G5nzAyGcUKw0IWkBeA/HYO9ju/w4ccHezbu8M/aGy4fOC\u002BuzPhLjy9ljFVBOh/AJcsP5IfXledv6n/L8yLNeLUy4//CBKGaZXnzqm9Gg9YVyWkR5W/\u002BTLh38yve1H3z\u002B2xf\u002BXvrHcH7IX4tzZhbvZgBr19qpVL2RfWE/3LlfcebmWV0hp9aYVWvMulaf3hi2Nni/tht0QTOu\u002BHPhtmv1aY3mYss9PjBmct\u002BHDqcvtTT0awPchPHB7U4dmHRo6wtGurfYkn9coecJuZDzSnrQ6QOftQNua91gKt0h\u002Bj0IyY6BMfeW665MfO3k9Bm7N4/bPTju9StH9eX6VBo1aBC3KtXqqxsUqzfwZRT9MX/L4KYBISR\u002BnvvFT3evGu1NNeNKFoazSrX6\u002BgZQTkdxEc/AcH7I3NI9SUj0dfX6d3k\u002Bc84I8UXF2vVOAJxLRwSn8Rp6OnqrtYCiUvXbTOgEwFRhk\u002Bg54jG83dap4l2l6sU27RGArKYKh8X4He7gAuFjpcrMRtv/A8qFp4n7cFXSrHhzdqMD/AfXwLdp/4rZ5QAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-28T08:19:33.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
