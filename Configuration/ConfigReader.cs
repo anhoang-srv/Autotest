@@ -1,6 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using SamsungCloudTest.Configuration;
 using System;
-using System.IO;
+using DotNetEnv; 
 
 namespace SamsungCloudTest.Configuration
 {
@@ -8,17 +8,18 @@ namespace SamsungCloudTest.Configuration
     {
         public static AppiumSettings GetAppiumSettings()
         {
-            var builder = new ConfigurationBuilder()
-    
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            
+            Env.Load();
 
-            IConfigurationRoot configuration = builder.Build();
+            return new AppiumSettings
+            {
+                DriverUrl = Environment.GetEnvironmentVariable("DRIVER_URL") ?? "http://127.0.0.1:4723",
+                AppId = Environment.GetEnvironmentVariable("APP_ID"),
+                DeviceName = Environment.GetEnvironmentVariable("DEVICE_NAME") ?? "WindowsPC",
 
-            var settings = new AppiumSettings();
-            configuration.GetSection("AppiumSettings").Bind(settings);
-
-            return settings;
+                // Parse chuỗi sang int
+                ImplicitWaitSeconds = int.Parse(Environment.GetEnvironmentVariable("IMPLICIT_WAIT_SECONDS") ?? "2")
+            };
         }
     }
 }

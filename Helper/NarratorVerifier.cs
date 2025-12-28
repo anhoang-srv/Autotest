@@ -99,7 +99,6 @@ namespace GalaxyCloud.Helpers
         }
 
         /// <summary>
-        /// Chiến thuật "Lùi ra - Tiến vào": Dùng để ép Narrator đọc lại element hiện tại.
         /// Thực hiện: Shift+Tab (lùi) -> Start Listening -> Tab (tiến) -> Wait -> Stop.
         /// </summary>
         /// <param name="waitTimeInMs">Thời gian chờ Narrator đọc (mặc định 2000ms).</param>

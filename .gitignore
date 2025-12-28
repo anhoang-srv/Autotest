@@ -1,0 +1,13 @@
+# Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.slnhistory
+*.docstates
+
+# Build results
+bin/
+obj/
+
+.env
