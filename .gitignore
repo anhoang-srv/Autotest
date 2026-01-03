@@ -13,3 +13,4 @@ obj/
 .env
 
 /appsettings.json
+/.github

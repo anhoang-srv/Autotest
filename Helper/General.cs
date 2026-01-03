@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Axe.Windows.Automation;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -7,12 +8,13 @@ namespace SamsungCloudTest.Helper
 {
     public class General
     {
-        protected WindowsDriver _driver;
+        protected WindowsDriver<WindowsElement> _driver;
         protected WebDriverWait _wait;
 
         // Constructor
-        public General(WindowsDriver driver)
+        public General(WindowsDriver<WindowsElement> driver)
         {
+
             _driver = driver;
             _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
         }
@@ -55,5 +57,6 @@ namespace SamsungCloudTest.Helper
         {
             return _driver != null && _driver.SessionId != null;
         }
+
     }
 }

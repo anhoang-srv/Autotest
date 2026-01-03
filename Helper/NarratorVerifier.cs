@@ -19,12 +19,17 @@ namespace GalaxyCloud.Helpers
         /// <summary>
         /// Gets or sets tên (Name) của element được đọc.
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; init; } = string.Empty;
 
         /// <summary>
         /// Gets or sets loại điều khiển (ControlType) của element (ví dụ: Button, Text).
         /// </summary>
-        public string ControlType { get; set; }
+        public string ControlType { get; init; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets trạng thái (State) của element (ví dụ: Checked, Unchecked, Collapsed, Expanded).
+        /// </summary>
+        public string State { get; init; } = string.Empty;
 
         /// <summary>
         /// Gets or sets thời gian xảy ra sự kiện.
@@ -37,7 +42,7 @@ namespace GalaxyCloud.Helpers
         /// <returns>Chuỗi định dạng log.</returns>
         public override string ToString()
         {
-            return $"[{Timestamp:HH:mm:ss}] Name: {Name} | ControlType: {ControlType}";
+            return $"[{Timestamp:HH:mm:ss}] Name: {Name} | ControlType: {ControlType} | State: {State}";
         }
     }
 
@@ -55,7 +60,7 @@ namespace GalaxyCloud.Helpers
         /// <summary>
         /// Biến lưu trữ trình xử lý sự kiện Focus, dùng để hủy đăng ký khi không dùng nữa.
         /// </summary>
-        private FocusChangedEventHandlerBase _focusHandler;
+        private FocusChangedEventHandlerBase? _focusHandler;
 
         /// <summary>
         /// Đối tượng dùng để khóa luồng (Thread-safety) khi truy cập danh sách Events.
@@ -162,10 +167,32 @@ namespace GalaxyCloud.Helpers
                 if (element != null)
                 {
                     // Lấy dữ liệu ngay lập tức (Snapshot) để tránh lỗi truy cập cross-thread sau này
+                    string state = string.Empty;
+                    try
+                    {
+                        // Cố gắng lấy state từ patterns
+                        var togglePattern = element.Patterns.Toggle.PatternOrDefault;
+                        var expandCollapsePattern = element.Patterns.ExpandCollapse.PatternOrDefault;
+                        
+                        if (togglePattern != null)
+                        {
+                            state = togglePattern.ToggleState.ToString();
+                        }
+                        else if (expandCollapsePattern != null)
+                        {
+                            state = expandCollapsePattern.ExpandCollapseState.ToString();
+                        }
+                    }
+                    catch
+                    {
+                        // Nếu không lấy được state thì để trống
+                    }
+
                     var newEvent = new NarratorEvent
                     {
                         Name = element.Name ?? string.Empty,
                         ControlType = element.ControlType.ToString(),
+                        State = state,
                         Timestamp = DateTime.Now
                     };
 
@@ -234,6 +261,19 @@ namespace GalaxyCloud.Helpers
         }
 
         /// <summary>
+        /// Lấy thuộc tính State (trạng thái) của sự kiện Focus cuối cùng.
+        /// </summary>
+        /// <returns>Trạng thái element hoặc chuỗi rỗng nếu không có dữ liệu.</returns>
+        public string GetLastState()
+        {
+            lock (_lockObject)
+            {
+                var lastEvent = Events.LastOrDefault();
+                return lastEvent != null ? lastEvent.State : string.Empty;
+            }
+        }
+
+        /// <summary>
         /// In toàn bộ log các sự kiện đã bắt được ra Console để phục vụ Debug.
         /// </summary>
         public void PrintLogs()
@@ -244,6 +284,17 @@ namespace GalaxyCloud.Helpers
                 {
                     Console.WriteLine(evt.ToString());
                 }
+            }
+        }
+
+        /// <summary>
+        /// Xóa tất cả event logs đã capture để reset trạng thái.
+        /// </summary>
+        public void ClearEvents()
+        {
+            lock (_lockObject)
+            {
+                Events.Clear();
             }
         }
 
