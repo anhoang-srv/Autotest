@@ -239,7 +239,20 @@ namespace SamsungCloudTest.Helper
                 return new List<NarratorEvent>();
             }
         }
-
+        /// <summary>
+        /// Xóa tất cả event logs đã capture để reset trạng thái.
+        /// </summary>
+        public void ClearEvents()
+        {
+            try
+            {
+                _narratorVerifier?.ClearEvents();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi clear events: {ex.Message}");
+            }
+        }
         public void Dispose()
         {
             if (_disposed)
